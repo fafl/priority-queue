@@ -50,6 +50,13 @@ class PriorityQueue(object):
         else:
             return self.nodes[1][0]
 
+    def peek_priority(self):
+        """Return priority of the top element."""
+        if len(self.nodes) == 1:
+            return None
+        else:
+            return self.nodes[1][1]
+
     # Remove the top element and return it
     def pop(self):
 
