@@ -19,7 +19,7 @@ class PriorityQueue(object):
     def _heapify(self, new_node_index):
         while 1 < new_node_index:
             new_node = self.nodes[new_node_index]
-            parent_index = new_node_index / 2
+            parent_index = int(new_node_index / 2)
             parent_node = self.nodes[parent_index]
 
             # Parent too big?
